@@ -96,7 +96,7 @@ sudo apt install -y git
 
 ### SSH Key
 
-If the instance already has one, then just `cat ~/.ssh/id_rsa.pub` and add it to your Gitlab/Github account, otherwise create it first. This step is only necessary when you need to clone repositories via SSH.
+If the server already has one provisioned, then just `cat ~/.ssh/id_rsa.pub` and add it to your Gitlab/Github account, otherwise create it first. This step is only necessary when you need to clone repositories via SSH.
 
 
 ### Instance Setup
