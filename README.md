@@ -208,6 +208,12 @@ Replace the dummy Approov secret on it with the one for your Approov account:
 APPROOV_BASE64_SECRET=your-secret-here
 ```
 
+#### Build the Docker Stack
+
+```
+sudo docker-compose build
+```
+
 #### Start the Docker Stack
 
 ```
