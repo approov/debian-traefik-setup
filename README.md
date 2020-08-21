@@ -50,11 +50,17 @@ Switch to the `debian` user with:
 su - debian
 ```
 
-### The Public IP Address
+### The Server Public IP Address
 
-Now grab the IP address for it in order to point a domain to it.
+In the next step to setup the Domain DNS will need the public IP address for the server.
 
-In the next step to setup the Domain DNS will need the public IP address for the server:
+First we need to install the `dnsutils` utils package:
+
+```txt
+sudo apt install -y dnsutils
+```
+
+Now you can get the public IP address for the server with:
 
 ```txt
 dig +short myip.opendns.com @resolver1.opendns.com
@@ -82,8 +88,10 @@ Ensure that port `80` and `443` are open.
 
 ### Install Git
 
+We will need `git` to clone this repository in order to install and setup Traefik:
+
 ```
-apt update && apt install -y git
+sudo apt install -y git
 ```
 
 ### SSH Key
