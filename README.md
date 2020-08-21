@@ -50,8 +50,15 @@ Switch to the `debian` user with:
 su - debian
 ```
 
+### The Public IP Address
+
 Now grab the IP address for it in order to point a domain to it.
 
+In the next step to setup the Domain DNS will need the public IP address for the server:
+
+```txt
+dig +short myip.opendns.com @resolver1.opendns.com
+```
 
 ## DOMAIN DNS SETUP
 
